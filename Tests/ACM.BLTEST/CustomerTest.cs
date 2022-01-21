@@ -46,6 +46,7 @@ namespace ACM.BLTEST
 
             // - Act
 
+            string actual = customer.Fullname; 
 
 
             // - Assert
