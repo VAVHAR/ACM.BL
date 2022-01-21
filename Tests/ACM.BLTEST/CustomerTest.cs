@@ -36,14 +36,7 @@ namespace ACM.BLTEST
         public void FullNameEmpty()
         {
             // - Arrange
-            Customer customer = new Customer
-            {
-
-                Firstname = "Bildo",
-                Lastname = "Baggins"
-
-            };
-
+            
             // - Act
 
             // - Assert
