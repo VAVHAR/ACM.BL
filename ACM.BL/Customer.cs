@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-
-// Try to change the code in Github
     public class Customer
     {
 
