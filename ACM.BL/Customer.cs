@@ -33,18 +33,31 @@ namespace ACM.BL
             }
         }
 
-        private string _lastname; 
+        public static int InstanceCount { get; set; }
+
+        private string _lastname;
         public string Lastname
         {
             get
             {
-               
+
                 return _lastname;
             }
             set
             {
                 _lastname = value;
             }
+        }
+
+        public bool Validate()
+        {
+            var isValid = true;
+
+            if (string.IsNullOrWhiteSpace(Lastname)) isValid = false;
+
+            if (string.IsNullOrWhiteSpace(EmailAddress)) isValid = false;
+
+            return isValid;
         }
     }
 }
