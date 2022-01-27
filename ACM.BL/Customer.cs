@@ -9,6 +9,16 @@ namespace ACM.BL
     public class Customer
     {
 
+        public Customer()
+        {
+
+        }
+
+        public Customer(int customerId)
+        {
+
+        }
+
         public int CustomerId { get; private set; }
         public string EmailAddress { get; set; }
         public string Firstname { get; set; }
@@ -58,6 +68,27 @@ namespace ACM.BL
             if (string.IsNullOrWhiteSpace(EmailAddress)) isValid = false;
 
             return isValid;
+        }
+
+        // method to retrive new customer
+        public Customer Retrieve(int CustomerId)
+        {
+            // code that retrive new customer will be coded here
+            return new Customer();
+        }
+
+        //method to retrive all cutomers / list of customers
+
+        public List<Customer> Retrieve()
+        {
+            return new List<Customer>();
+        }
+
+        public bool Save()
+        {
+            // Code ton save curret customer will be codded later with UI
+
+            return true;
         }
     }
 }
