@@ -22,9 +22,15 @@ namespace ACM.BLTEST
 
             //Act
 
+            var Actual = customerRepository.Retrive(1);
 
 
             //Assert
+
+            Assert.AreEqual(expected.CustomerId, Actual.CustomerId);
+            Assert.AreEqual(expected.Firstname, Actual.Firstname);
+            Assert.AreEqual(expected.Lastname, Actual.Lastname);
+            Assert.AreEqual(expected.EmailAddress, Actual.EmailAddress);
         }
     }
 }
